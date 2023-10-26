@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <!-- Este formulario vai ser responsavel por armazenar as informações
+        dos clientes e utilizar as variaveis para o calculo do seguro
+        que sera feito em outra página. -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="form_style.css">
     </head>
     <body>
+        <!-- Antes de iniciar o formulario, colocamos um titulo.-->
     <div class="container">
             <header class="header">
                 <h1 id="title" class="text-center"> Formulário de Inscrição</h1>
@@ -15,10 +19,11 @@
                 <p>
             </header>
         
-        
-        <form id="inscriçao" action="" method="POST">
+        <!-- Aqui iniciamos o formulario com os dados pessoais do cliente.-->
+        <form id="inscriçao" action="seguro.php" method="POST">
             <h1 id="form-title" class="form-title">Dados pessoais</h1>
             <div class="form-group">
+                <!-- Primeiro o nome, seguido das identificações para o CSS.-->
                 <label id="nome-label" for="nome">Nome Completo:</label>
                 <input
                  type="Text"
@@ -31,7 +36,7 @@
                 />
             </div>
 
-            
+            <!-- input pedindo a idade, onde será utilizada para o calculo do seguro.-->
             <div class="form-group">
                 <label id="year-label" for="year">Idade:</label>
                 <input
@@ -44,6 +49,7 @@
                 />
             </div>
 
+            <!-- CPF do cliente. (Aqui vai ser um número fícticio)-->
             <div class="form-group">
                 <label id="cpf-label" for="cpf">CPF:</label>
                 <input
@@ -57,7 +63,7 @@
                 />
             </div>
 
-
+            <!-- Email também fícticio -->
             <div class="form-group">
                 <label id="email-label" for="email">Email</label>
                 <input
@@ -70,18 +76,27 @@
                  required
                 />
             </div>
-        </form>
-            <form action="upload_proc.php" method="POST" enctype="multipart/form-data">
-            <label for="file">CNH:</label>
-            <input type="file" name="file" id="file" accept=".jpg,.jpeg,.png">
             <br>
-            <input type="submit" name="submit" value="Enviar">
+        </form>
+            <!-- Aqui fechamos o form para incrementar o upload de arquivos.-->
+            <!-- Linkamos o form com outro arquivo que contêm a estrutura PHP.-->
+            <form action="upload_proc.php" method="POST" enctype="multipart/form-data">
+
+            <div class="form-control">
+                <label for="file">CNH:</label>
+                <!-- Limitamos os tipos de arquivos que podem ser enviados.-->
+                <input type="file" name="file" id="file" accept=".jpg,.jpeg,.png">
+                <br>
+                <br>
+                <input type="submit" name="submit" value="Enviar">
+            </div>
+
             </form>
-
-        <form id="inscriçao" action="" method="POST">
-            
+        <!-- Aqui continuamos o form, mas agora com os dados do veiculo.-->
+        <form id="inscriçao" action="seguro.php" method="POST">
+            <br>
             <h1 id="form-title" class="form-title">Dados do Veiculo</h1>
-
+        <!-- O modelo do carro, que sera irrelevante para a estrutura PHP.-->
             <div class="form-group">
                 <label id="model-label" for="model-car">Modelo do Carro:</label>
                 <input
@@ -95,7 +110,7 @@
                 />
             </div>
 
-
+            <!-- O ano do carro será importante, pois ele vai ter grande influência no preço final.-->
             <div class="form-group">
                 <label id="year-label" for="year-car">Ano do carro:</label>
                 <input
@@ -107,7 +122,7 @@
                  required
                 />
             </div>
-
+            <!-- Placa do carro tabém irrelevante para a estrutura.-->
             <div class="form-group">
                 <label id="placa-label" for="placa-car">Placa do Carro:</label>
                 <input
@@ -120,7 +135,7 @@
                  required
                 />
             </div>
-
+            <!-- O valor do carro também será de extrema importância.-->
             <div class="form-group">
                 <label id="value-label" for="value-car">Valor da Tabela FIPE do carro:</label>
                  <span class="input-symbol-euro">
@@ -133,7 +148,7 @@
                  required
                  />
                  </span>
-
+            <!-- Chassi do carro.-->
             <div class="form-group">
                 <label id="chassi-label" for="chassi-car">Chassi do carro:</label>
                  <input
@@ -142,6 +157,7 @@
                  id="chassi-car"
                  class="form-control"
                  maxlength="20"
+                 placeholder="Insira o Chassi"
                  required      
                  />    
             </div>
