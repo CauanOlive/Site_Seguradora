@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <?php
+    session_start();
+    ?>
+
     <header>
         <h1>ProtecSeguro</h1>
         <nav>
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Planos de Seguro</a></li>
-                <li><a href="#">Cotação Online</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="form.php">Cotação Online</a></li>
+                <li><a href="Contact.php">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -41,14 +46,13 @@
             <li>Assistência 24 Horas</li>
              <p>Guincho 24 Horas, sem limite de quilometragem.</p>
         </ul>
-        <li>Faça a Cotação de Nosso Seguros</li>
-      <a href="#" class="cta-button">Obter Cotação Grátis</a>
+      <a href="form.php" class="cta-button">Obter Cotação Grátis</a>
     </section>
 
     <section class="contact">
         <h2>Entre em Contato</h2>
         <p>Tem alguma dúvida? Fale conosco para obter mais informações ou para receber uma cotação personalizada para o seu veículo.</p>
-        <a href="#" class="cta-button">Contato</a>
+        <a href="Contact.php" class="cta-button">Contato</a>
     </section>
 
     <footer>
