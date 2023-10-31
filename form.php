@@ -88,7 +88,7 @@
                 <input type="file" name="file" id="file" accept=".jpg,.jpeg,.png">
                 <br>
                 <br>
-                <input type="submit" name="submit" value="Enviar">
+            
             </div>
 
             </form>
