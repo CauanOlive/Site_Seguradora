@@ -12,7 +12,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="index.php">Página Principal</a></li>
         </ul>
     </nav>
     <section>
