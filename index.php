@@ -8,10 +8,6 @@
 </head>
 <body>
     
-    <?php
-    session_start();
-    ?>
-
     <header>
         <h1>ProtecSeguro</h1>
         <nav>
@@ -60,4 +56,3 @@
     </footer>
 </body>
 </html>
-
