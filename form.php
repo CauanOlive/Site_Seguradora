@@ -77,39 +77,23 @@
                 />
             </div>
             <br>
-        </form>
-            <!-- Aqui fechamos o form para incrementar o upload de arquivos.-->
-            <!-- Linkamos o form com outro arquivo que contêm a estrutura PHP.-->
-            <form action="upload_proc.php" method="POST" enctype="multipart/form-data">
 
-            <div class="form-control">
-                <label for="file">CNH:</label>
-                <!-- Limitamos os tipos de arquivos que podem ser enviados.-->
-                <input type="file" name="file" id="file" accept=".jpg,.jpeg,.png">
-                <br>
-                <br>
-            
-            </div>
-
-            </form>
-        <!-- Aqui continuamos o form, mas agora com os dados do veiculo.-->
-        <form id="inscriçao" action="seguro.php" method="POST">
             <br>
             <h1 id="form-title" class="form-title">Dados do Veiculo</h1>
-        <!-- O modelo do carro, que sera irrelevante para a estrutura PHP.-->
+            <!-- O modelo do carro, que sera irrelevante para a estrutura PHP.-->
             <div class="form-group">
                 <label id="model-label" for="model-car">Modelo do Carro:</label>
                 <input
-                 type="text"
-                 name="modelo"
-                 id="modelo"
-                 class="form-control"
-                 placeholder="Modelo do carro"
-                 maxlength="100"
-                 required
+                type="text"
+                name="modelo"
+                id="modelo"
+                class="form-control"
+                placeholder="Modelo do carro"
+                maxlength="100"
+                required
                 />
             </div>
-
+            
             <!-- O ano do carro será importante, pois ele vai ter grande influência no preço final.-->
             <div class="form-group">
                 <label id="year-label" for="year-car">Ano do carro:</label>
@@ -120,37 +104,36 @@
                  class="form-control"
                  placeholder="Ano do carro"
                  required
-                />
-            </div>
-            <!-- Placa do carro tabém irrelevante para a estrutura.-->
-            <div class="form-group">
-                <label id="placa-label" for="placa-car">Placa do Carro:</label>
-                <input
-                 type="text"
-                 name="placa-carro"
-                 id="placa-carro"
-                 class="form-control"
-                 placeholder="Placa do carro"
-                 maxlength="10"
-                 required
-                />
-            </div>
-            <!-- O valor do carro também será de extrema importância.-->
-            <div class="form-group">
-                <label id="value-label" for="value-car">Valor da Tabela FIPE do carro:</label>
-                 <span class="input-symbol-euro">
-                 <input 
-                 type="number"
-                 name="valor-carro"
-                 id="valor-carro"
-                 class="form-control"
-                 placeholder="Insira o valor do carro"
-                 required
                  />
-                 </span>
-            <!-- Chassi do carro.-->
-            <div class="form-group">
-                <label id="chassi-label" for="chassi-car">Chassi do carro:</label>
+                </div>
+                <!-- Placa do carro tabém irrelevante para a estrutura.-->
+                <div class="form-group">
+                    <label id="placa-label" for="placa-car">Placa do Carro:</label>
+                    <input
+                    type="text"
+                    name="placa-carro"
+                    id="placa-carro"
+                    class="form-control"
+                    placeholder="Placa do carro"
+                    maxlength="10"
+                    required
+                    />
+                </div>
+                <!-- O valor do carro também será de extrema importância.-->
+                <div class="form-group">
+                    <label id="value-label" for="value-car">Valor da Tabela FIPE do carro:</label>
+                    <input 
+                    type="number"
+                    name="valor-carro"
+                    id="valor-carro"
+                    class="form-control"
+                    placeholder="Insira o valor do carro"
+                    required
+                 />
+
+                <!-- Chassi do carro.-->
+                <div class="form-group">
+                    <label id="chassi-label" for="chassi-car">Chassi do carro:</label>
                  <input
                  type="text"
                  name="chassi-car"
@@ -162,14 +145,19 @@
                  />    
             </div>
             <div class="form-group">
-                <button
-                 type="submit"
-                 id="submit"
-                 class="submit-button"
-                >Continuar</button>     
+                <input
+                type="submit"
+                id="submit"
+                value="Enviar"
+                class="form-control"
+                >    
             </div>
-    </div>
+        </div>
+        
+    </form>
 
-        </form>
-    </body>
+    <br>
+    <br>
+
+</body>
 </html>
