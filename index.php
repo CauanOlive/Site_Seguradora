@@ -12,8 +12,7 @@
         <h1>ProtecSeguro</h1>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Planos de Seguro</a></li>
+                <li><a href="#comeco">Planos de Seguro</a></li>
                 <li><a href="form.php">Cotação Online</a></li>
                 <li><a href="Contact.php">Contato</a></li>
                 <li><a href="Group.php">Grupo</a><li>
@@ -28,7 +27,9 @@
       
         <div class="quadrado">
             <h3>Sobre Nós</h3>
-            <p3>A ProtecSeguro é uma empresa líder em seguros automotivos,<br></p3><p3>com anos de experiência e milhares de clientes satisfeitos.Nossa<br></p3> <p3> missão é fornecer proteção confiável e acessível para o seu veículo.</p3>
+            <p3>A ProtecSeguro é uma empresa líder em seguros automotivos,<br></p3>
+            <p3>com anos de experiência e milhares de clientes satisfeitos.Nossa<br></p3> 
+            <p3> missão é fornecer proteção confiável e acessível para o seu veículo.</p3>
         
         </div>
         <div class="quadrados">
