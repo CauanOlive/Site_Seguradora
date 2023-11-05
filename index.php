@@ -16,6 +16,7 @@
                 <li><a href="#">Planos de Seguro</a></li>
                 <li><a href="form.php">Cotação Online</a></li>
                 <li><a href="Contact.php">Contato</a></li>
+                <li><a href="Group.php">Grupo</a><li>
             </ul>
         </nav>
     </header>
