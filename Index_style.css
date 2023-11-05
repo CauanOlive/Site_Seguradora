@@ -1,0 +1,52 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cinza claro de fundo */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do formulário */
+#login {
+    background-color: #fff; /* Fundo branco do formulário */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #333; /* Cor do texto - cinza escuro */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc; /* Cor da borda - cinza claro */
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #3498db; /* Azul para o botão de envio */
+    color: #fff; /* Cor do texto - branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilos para mensagens de erro */
+.error-message {
+    color: #f00; /* Cor do texto - vermelho */
+    font-weight: bold;
+    margin-top: 10px;
+}
