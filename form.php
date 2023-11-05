@@ -67,19 +67,20 @@
             <div class="form-group">
                 <label id="email-label" for="email">Email</label>
                 <input
-                 type="email"
                  name="email"
+                 type="email"
                  id="email"
                  class="form-control"
                  placeholder="Insira seu Email"
                  maxlength="200"
                  required
-                />
-            </div>
-            <br>
+                 />
+                </div>
+                <br>
+                
+                <h1 id="form-title" class="form-title">Dados do Veiculo</h1>
+                <br>
 
-            <br>
-            <h1 id="form-title" class="form-title">Dados do Veiculo</h1>
             <!-- O modelo do carro, que sera irrelevante para a estrutura PHP.-->
             <div class="form-group">
                 <label id="model-label" for="model-car">Modelo do Carro:</label>
@@ -144,15 +145,72 @@
                  required      
                  />    
             </div>
+            
+            <h1 id="form-title" class="form-title">Escolha um Tipo de Plano</h1>
+
+            <br>
+
             <div class="form-group">
                 <input
-                type="submit"
-                id="submit"
-                value="Enviar"
-                class="form-control"
+                 type="radio"
+                 name="tipo"
+                 value="basico"
+                 id="tipo"
+                 class="form control"
+                />
+                <label>Plano Basico:
+                Este plano inclui somente o seguro contra colisões
+                ou furto do veiculo. 
+                Ele também será o mais barato e acessivel para todos.
+                </label>   
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <input
+                 type="radio"
+                 name="tipo"
+                 value="avancado"
+                 id="tipo"
+                 class="form control"
+                />
+                <label>Plano Avançado:
+                Este plano inclui todos os beneficios do plano
+                basico e adiciona um guincho 24hrs, sempre perto
+                de você.
+                </label>   
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <input
+                 type="radio"
+                 name="tipo"
+                 value="completo"
+                 id="tipo"
+                 class="form control"
+                />
+                <label>Plano Completo:
+                Este plano inclui as versões basico e Avançado,
+                além de oferecer o seguro para terceiros.
+                Também inclui seguro para todos os itens deixados
+                ou perdidos no carro durante o furto ou a colisão.
+                </label>   
+            </div>
+
+            <br>
+            
+            <div class="form-group">
+                <input
+                 type="submit"
+                 id="submit"
+                 value="Enviar"
+                 class="form-control"
                 >    
             </div>
-        </div>
+    </div>
         
     </form>
 
