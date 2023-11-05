@@ -11,9 +11,6 @@
         <h1>Membros do Grupo</h1>
     </header>
     <hr>
-    <div>
-        <a href="pg_principal.php">Página Principal</a>    
-    </div>
     <section>
         <h2>Membros e Funções:</h2>
         <p>Aqui estão os membros do nosso grupo e suas funções:</p>
@@ -26,14 +23,18 @@
     </section>
     <section>
         <h2>Estruturas e Controle de Sessões:</h2>
+        <p>Página principal</p>
         <p>Contato</p>
         <p>Seguro</p>
         <p>Index</p>
         <p>Membros do grupo</p>
+        <div>
+            <a href="pg_principal.php">Página Principal</a>    
+        </div>
     </section>
-    <div id=Final>
+    <footer>
         <p>&copy; 2023 ProtecSeguro</p>
-    </div>
+    </footer>
     
 </body>
 </html>
