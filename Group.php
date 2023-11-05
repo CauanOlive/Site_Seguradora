@@ -12,7 +12,7 @@
     </header>
     <hr>
     <div>
-        <a href="index.php">Página Principal</a></li>    
+        <a href="index.php">Página Principal</a>    
     </div>
     <section>
         <h2>Membros e Funções:</h2>
