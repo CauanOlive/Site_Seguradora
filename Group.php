@@ -21,7 +21,7 @@
             <li><strong>Cauan</strong> - Engenheiro de Software</li>
             <li><strong>Lucas</strong> - Desenvolvedor</li>
             <li><strong>Pedro</strong> - Designer</li>
-            <li><strong>Kevin</strong> - Designer</li>
+            <li><strong>Kevin</strong> -  Web Designer</li>
         </ul>
     </section>
     <section>
