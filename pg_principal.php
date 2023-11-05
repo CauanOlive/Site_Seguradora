@@ -7,9 +7,34 @@
     <link rel="stylesheet" href="pg_principal_style.css">
 </head>
 <body>
+
+    <?php
+
+        /* Por aqui faremos os controles das sessões.
+        onde iremos utilizar o nome de usuario inserido
+        no index da página.*/
+
+        //Este primeiro  código é para ocultar os erros
+        //de php na página.
+        error_reporting(0);
+        ini_set('display_errors', 0);
+        session_start();
+
+        $usuario = $_POST['usuario'];
+        $senha = $_POST['senha'];
+
+        if($senha=="projeto"){
+            $_SESSION['logado'] = 's';
+            $_SESSION['usuario'] = $usuario;
+            $_SESSION['erro'] = "";
+    }
+        else{
+        $_SESSION['erro'] = "USUARIO OU SENHA INCORRETA!";
+    }
+    ?>
     
     <header>
-        <h1>ProtecSeguro</h1>
+        <h1>ProtecSeguro  Bem-vindo <?php echo $_SESSION["usuario"];?></h1>
         <nav>
             <ul>
                 <li><a href="">Planos de Seguro</a></li>
