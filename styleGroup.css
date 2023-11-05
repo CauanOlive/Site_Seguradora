@@ -1,62 +1,32 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgba(10, 19, 193, 0.6);
 }
 
-h1{color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-
+header {
+    background-color: #333;
+    color: #939393;
+    text-align: center;
+    padding: 20px;
 }
 
-header {text-align: center;
-    padding: 5px;
-    border:(10, 19, 193, 0.6);
-    font-family: 'Poppins', sans-serif;
-    
-    
-}
-
-hr{margin:18px;
-    box-shadow: 6px 3px rgb(0, 0, 0)
-
-}
-
-div{margin: auto;
-    width: 75%;
-    background-color: rgb(255, 255, 255);
+nav {
+    background-color: #444;
+    color: #2013b6;
     padding: 10px;
-    box-shadow: 3px 6px rgb(0, 0, 0);
-    border-radius: 3px;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
 }
 
-a:link{color: black;
-
-
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-h2{color: rgba(10, 19, 193, 0.7);
-    font-size: 30px;
-    padding-left: 10px;
-
-}
-
-p{color: rgba(10, 19, 193, 0.7);
-    font-family: 'Poppins', sans-serif;
-    font-size: 17px;
-    padding-left: 10px;
-
-}
-
-li{color: rgba(10, 19, 193, 0.7);
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    padding-left: 10px;
-
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
 section {
@@ -64,17 +34,19 @@ section {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    font-family: 'Poppins', sans-serif;
-    box-shadow: 3px 6px rgb(0, 0, 0);
 }
 
-#Final{
-    background-color: rgb(255, 255, 255);
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 10px;
-    font-family: 'Poppins', sans-serif;
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-	bottom: 0;
+}
+
+#contact.html h2 {
+    color: #007bff;
+}
+
+#members.html h2 {
+    color: #ff6c00;
 }
