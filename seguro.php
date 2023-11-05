@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $modelo = $_POST["modelo"];
     $ano_carro = (int)$_POST["ano-carro"];
     $valor_carro = (float)$_POST["valor-carro"];
-    $tipo = "completo";
+    $tipo = $_POST["tipo"];
 
     $temp = 0;
     $seguro = 0;
@@ -47,7 +47,45 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $seguro = $temp + ($temp * 0.02);
         }
 
-        echo "O seguro do carro é de R$$seguro";
     }
 }
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de conclusão do seguro</title>
+    </head>
+    <body>
+
+    <div class="control">
+        <h1>Obrigado por escolher a nossa seguradora.</h1> 
+        <p>Ficamos muito feliz com a sua escolha, a partir de agora,
+            nos cuidaremos  do resto.<br>
+            Um mensagem de confirmação será enviada por e-mail, pedimos
+            que confirme que é mesmo você.
+        </p>
+    </div>
+
+    <div class="result">
+       
+        <h2>Aqui está o seu plano!</h2>
+        <p>Você optou pelo plano 
+        <?php echo"$tipo"?>, uma ótima escolha.
+        </p>
+
+        <h3>O valor do Seguro ficou em:</h3>
+        <p>R$<?php echo"$seguro"?> por mês.</p>
+    </div>
+
+    <div>
+        <a href="index.php">Página Principal</a>   
+    </div>
+
+    <div id=Final>
+        <p>&copy; 2023 ProtecSeguro</p>
+    </div>
+
+    </body>
+</html>
