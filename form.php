@@ -10,12 +10,17 @@
         <link rel="stylesheet" type="text/css" href="form_style.css">
     </head>
     <body>
+
+    <?php
+        //Aqui estamos iniciando as variaveis sessions na página
+        session_start();
+    ?>
         <!-- Antes de iniciar o formulario, colocamos um titulo.-->
     <div class="container">
             <header class="header">
                 <h1 id="title" class="text-center"> Formulário de Inscrição</h1>
                 <p id="descriçao" class="descriçao text-center">
-                    Obrigado por escolher nossa seguradora!
+                    Obrigado por escolher nossa seguradora <?php echo$_SESSION["usuario"]?>!
                 <p>
             </header>
         
@@ -146,6 +151,7 @@
                  />    
             </div>
             
+            <!-- Daremos três opções de planos-->
             <h1 id="form-title" class="form-title">Escolha um Tipo de Plano</h1>
 
             <br>
