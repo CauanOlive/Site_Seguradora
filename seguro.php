@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </div>
 
     <div>
-        <a href="index.php">Página Principal</a>   
+        <a href="pg_principal.php">Página Principal</a>   
     </div>
 
     <div id=Final>
