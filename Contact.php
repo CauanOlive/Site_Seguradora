@@ -7,21 +7,24 @@
     <title>Página de Contato</title>
 </head>
 <body>
+    <?php
+    session_start();
+    ?>
     <header>
-        <h1>Entre em Contato</h1>
+        <h1>Entre em Contato conosco <?php echo $_SESSION["usuario"]?>.</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="pg_principal.php">Página Principal</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Informações de Contato</h2>
-        <p>Para entrar em contato conosco, utilize os seguintes meios:</p>
+        </nav>
+        <section>
+            <h2>Informações de Contato</h2>
+            <p>Para entrar em contato conosco, utilize os seguintes meios:</p>
         <ul>
             <li>Email: <a href="mailto:ProtecSeguro@gmail.com.br">ProtecSeguro@gmail.com.br</a></li>
             <li>Ou fale com um de nossos atendentes: <br>
             Telefone: (11) 1234-5678</li>
+        </ul>
+        <ul>
+            <li><a href="pg_principal.php">Página Principal</a></li>
         </ul>
     </section>
     <footer>
