@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProtecSeguro</title>
-    <link rel="stylesheet" href="Index_Style.css">
+    <link rel="stylesheet" href="pg_principal_style.css">
 </head>
 <body>
     
@@ -12,7 +12,7 @@
         <h1>ProtecSeguro</h1>
         <nav>
             <ul>
-                <li><a href="#comeco">Planos de Seguro</a></li>
+                <li><a href="">Planos de Seguro</a></li>
                 <li><a href="form.php">Cotação Online</a></li>
                 <li><a href="Contact.php">Contato</a></li>
                 <li><a href="Group.php">Grupo</a><li>
