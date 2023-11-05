@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <body>
 
     <div class="control">
-        <h1>Obrigado por escolher a nossa seguradora.</h1> 
+        <h1>Obrigado por escolher a nossa seguradora <?php echo $_SESSION["usuario"]?>.</h1> 
         <p>Ficamos muito feliz com a sua escolha, a partir de agora,
             nos cuidaremos  do resto.<br>
             Um mensagem de confirmação será enviada por e-mail, pedimos
