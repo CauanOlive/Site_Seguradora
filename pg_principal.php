@@ -30,16 +30,17 @@
     }
         else{
         $_SESSION['erro'] = "USUARIO OU SENHA INCORRETA!";
+        header("Location:Index.php");
     }
     ?>
-            <div id:"letreiro">
+            <div>
                 
                     <header>
                             <h1>ProtecSeguro  Bem-vindo <?php echo $_SESSION["usuario"];?></h1>
                             
                             <nav>
                                 <ul class="menu">
-                                    <li><a href="">Planos de Seguro</a></li>
+                                    <li><a href="logout.php">Desconectar</a></li>
                                     <li><a href="form.php">Cotação Online</a></li>
                                     <li><a href="Contact.php">Contato</a></li>
                                     <li><a href="Group.php">Grupo</a><li>
