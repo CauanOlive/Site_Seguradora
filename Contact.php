@@ -7,6 +7,7 @@
     <title>Página de Contato</title>
 </head>
 <body>
+
     <?php
     session_start();
     ?>

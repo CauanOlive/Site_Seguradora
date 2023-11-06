@@ -21,7 +21,7 @@
                 <h1 id="title" class="text-center"> Formulário de Inscrição</h1>
                 <p id="descriçao" class="descriçao text-center">
                     Obrigado por escolher nossa seguradora <?php echo$_SESSION["usuario"]?>!
-                <p>
+                </p>
             </header>
         
         <!-- Aqui iniciamos o formulario com os dados pessoais do cliente.-->

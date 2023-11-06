@@ -1,156 +1,276 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(255, 255, 255);
 }
 
-header {
-  background-color: rgba(10, 19, 193, 0.6);
+
+
+h1{
   color: rgb(255, 255, 255);
+  font-size: 28px;
+  text-align: left;
+  margin-left: 38px;
+  margin-top: 10px;
+}
+
+#letreiro{
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav li {
+.menu{
+  display: flex;
+  margin-right: 36px;
+  float: right;
+  margin-top: -44px;
+  font-size: 22px;
+}
+
+nav li{
   display: inline;
   margin-right: 20px;
 }
 
-nav a {
+nav a{
   text-decoration: none;
   color: #ffffff;
 }
 
-h1{color: white;
-    font-size: 42px;
-    text-align: left;
+h2{
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  margin-top: -35px;
+}
+
+p2{
+  color: white;
+  font-size: 20px;
+  margin-left: 116px
 
 }
 
-h2{color: white;
-    font-size: 30px;
-    text-align: left;
-
-}
-p2{color: white;
-    font-size: 20px;
-    text-align: left;
-   
-
+.title1{
+  color: white;
+  margin-left: 839px;
+  padding: 0px;
+  margin-top: 70px;
+  float: left;
 }
 
-h3{color: white;
-    font-size: 30px;
-    text-align: left;
-
-}
-p3{color: white;
-    font-size: 20px;
-    text-align: left;
+p3{
+  color: white;
+  font-size: 20px;
+  text-align: left;
 }
 
-h4{color: rgba(10, 19, 193, 0.6);
-    font-size: 30px;
-    text-align: left;
-
-}
-p4{color: rgba(10, 19, 193, 0.6);
-    font-size: 20px;
-    text-align: left;
-
+h4{
+  color: rgb(255 255 255);
+  font-size: 37px;
+  padding: 0px;
+  float: left;
+  margin-left: -139px;
+  margin-top: 47px;
 }
 
-.hero {background-repeat: no-repeat;
-  background-image: url("https://img.freepik.com/fotos-gratis/vista-do-interior-do-carro-de-uma-mulher-motorista-ajustando-os-espelhos-antes-de-dirigir-um-carro_342744-699.jpg?size=626&ext=jpg&ga=GA1.2.933601817.1696550400&semt=ais");
+p4{
+  color: rgb(255 255 255);
+  font-size: 23px;
+  text-align: center;
+  margin-left: -481px;
+  margin-top: 135px;
+  float: left;
+}
+
+.hero{
+  background-repeat: no-repeat;
+  background-image: url("https://www.lumma.com.br/wp-content/uploads/2021/10/Seguranca-no-Transito.png");
   color: #ffffff;
-  width: 100%;
   height: 48%;
-  padding: 130px;
+  padding: 242px;
   background-size: cover;
+  margin-top: -87px;
 }
 
 .cta-button1{
   display: inline-block;
   background-color: rgb(255, 255, 255);
-  color: rgba(10, 19, 193, 0.6);
+  color: rgb(10 19 193);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  margin: 50px;
+  margin: -78px;
+  margin-left: 293px;
+  margin-top: 33px;
 }
 
 .cta-button2{
-  display: inline-block;
-  background-color: rgba(10, 19, 193, 0.6);
-  ;
-  color: #fff;
-  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(10, 19, 193);
+  padding: 17px 50px;
   text-decoration: none;
   border-radius: 5px;
+  float:left;
+  margin-left: -441px;
+  margin-top: 239px;
   font-weight: bold;
+  font-size: 18px;
 }
 
-.contact {color: rgba(10, 19, 193, 0.6);
-    text-align: left;
-    padding: 40px;
-}
-
-h3{color: white;
-    font-size: 25px;
-    text-align: left;
-}
-p3{color: white;
-    font-size: 20px;
-    text-align: left;
-
-}
-
-p{color: white;
-font-size: 20px;
-margin: 15px;
-}
-
-li {color: white;
-  font-size: 25px;
-  margin: 10px;
-}
-
-.quadrado{float:left;
-    margin: 50px;
-    width: 668px;
-    height: 125px;
-    padding: 35px;
-    background-color: rgba(10, 19, 193, 0);
-    text-align: left;
-}
-
-.comeco{float:left;
-    margin: 50px;
-    width: 333px;
-    height: 200px;
-    padding: 35px;
-    background-color: rgba(10, 19, 193, 0);
-    text-align: left;
+.img4{
+  background-repeat: no-repeat;
+  background-image: url("https://img.freepik.com/fotos-gratis/equipe-de-teletrabalhadores-trabalhando-no-escritorio-escuro_74855-4744.jpg");
+  background-size: contain;
+  padding: 212px;
+  float: left;
+  margin-top: -159px;
+  margin-left: 846px;
+  border-radius: 30px;
 }
 
 
-#quadrados{float: right;
+/*.contact{
+  color: rgba(10, 19, 193, 0.6);
+  text-align: left;
+  padding: 144px;
+}*/
 
-
+h3{
+  color: rgb(68 10 193);
+  font-size: 45px;
+  margin-left: 484px;
+  padding: 0px;
+  margin-top: 70px;
+  float: left;
 }
 
-div{background-color: rgba(10, 19, 193, 0.6);
-    padding: 1px;
-    max-width: 3000px;
-    max-height: 1000px;
-}
-
-footer{background-color: rgba(10, 19, 193, 0.6);
-  color: rgb(255, 255, 255);
+p3{
+  color: white;
+  font-size: 28px;
   text-align: center;
+  margin-left: 586px;
+  float: left;
+  margin-top: -20px;
+}
+
+
+.sobre1{
+  color: rgb(68 10 193);
+  font-size: 27px;
+  margin: 24px;
+  padding: 0px;
+  margin-left: -911px;
+  margin-top: -113px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.img1{
+  background-repeat: no-repeat;
+  background-image: url("https://img.freepik.com/vetores-premium/caminhao-de-reboque-para-falhas-de-transporte-e-carros-de-emergencia-vector-illustration_110233-712.jpg");
+  background-size: contain;
+  padding: 111px;
+  float: left;
+  margin-top: -206px;
+  margin-left: 997px;
+}
+
+.sobre2{
+  color: rgb(68 10 193);
+  font-size: 27px;
+  margin: 24px;
+  padding: 0px;
+  margin-left: 8px;
+  margin-top: -56px;
+  text-align: center;
+  list-style-type:none;
+}
+
+.img2{
+  background-repeat: no-repeat;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/018/926/133/original/car-thief-flat-color-icon-png.png");
+  background-size: contain;
+  padding: 85px;
+  float: left;
+  margin-top: -196px;
+  margin-left: 558px;
+}
+
+.sobre3{
+  color: rgb(68 10 193);
+  font-size: 27px;
+  margin: 24px;
+  padding: 0px;
+  margin-left: 917px;
+  margin-top: -56px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.img3{
+  background-repeat: no-repeat;
+  background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/19500211-acidente-de-transito-de-colisao-de-carro-com-limitador-de-estrada-vetor.jpg");
+  background-size: contain;
+  padding: 139px;
+  float: left;
+  margin-top: -192px;
+  margin-left: 47px;
+}
+
+.quadrado{
+    width: 1349px;
+    height: 399px;
+    background-color: rgb(68 10 193);
+    text-align: left;
+    margin-top: -70px;
+}
+
+img{
+  background-repeat: no-repeat;
+  width: 446px;
+  float: left;
+  margin-left: 77px;
+  margin-top: -212px;
+  border-radius: 30px;
+  padding: 0px
+}
+
+
+.comeco{
+  width: 100%;
+  height: 396px;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+
+#quadrados{
+  float: right;
+}
+
+.bloco1{
+  width: 1348px;
+  height: 446px;
+  background-color: rgb(68 10 193);
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.fim{
+  float: left;
+  color: rgb(68 10 193);
+  text-align: center;
+  margin-left: 483px;
+  margin-top: -20px;
+}
+
+footer{
+  background-color: rgb(255, 255, 255);
   padding: 10px;
 }
