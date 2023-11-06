@@ -1,52 +1,58 @@
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2; /* Cinza claro de fundo */
+body{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    background: url("../Projeto_pessoal_LUCAS/imgs/dbv1.jpg");
+    background-size: cover;
 }
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.7);
+    text-align: center;
 }
-
-/* Estilos do formulário */
-#login {
-    background-color: #fff; /* Fundo branco do formulário */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.box h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
 }
-
-label {
-    font-weight: bold;
-    color: #333; /* Cor do texto - cinza escuro */
+.box input[type="text"],.box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #d0db34;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: #ffffff;
+    border-radius: 24px;
+   transform: 0.25s; 
 }
-
-input[type="text"],
-input[type="password"] {
-    width: 90%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc; /* Cor da borda - cinza claro */
-    border-radius: 3px;
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+    width: 280px;
+    border-color: #ee3a22;
 }
-
-input[type="submit"] {
-    background-color: #3498db; /* Azul para o botão de envio */
-    color: #fff; /* Cor do texto - branco */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-top: 10px;
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #d0db34;
+    padding: 14px 40px;
+    outline: none;
+    color: #ffffff;
+    border-radius: 24px;
+   transform: 0.25s; 
+   cursor: pointer;
 }
+.box input[type="submit"]:hover{
+    background: #c7c400;
 
-/* Estilos para mensagens de erro */
-.error-message {
-    color: #f00; /* Cor do texto - vermelho */
-    font-weight: bold;
-    margin-top: 10px;
 }
