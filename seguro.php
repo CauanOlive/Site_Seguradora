@@ -56,10 +56,29 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Página de conclusão do seguro</title>
+          <style>  
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: rgb(68 10 193);
+      }
+    .container {
+      background-color:#c8cccd;
+      margin:7px;
+      border:2px solid #5b5c5d;
+      display:block;
+      width:96%;
+      height:40px;
+      padding:8px;
+      box-shadow:3px 3px rgb(0,0,0);
+    }
+      </style>
     </head>
     <body>
-
-    <div class="control">
+        <div class="container">
+            
+            <div class="control">
         <h1>Obrigado por escolher a nossa seguradora <?php echo $_SESSION["usuario"]?>.</h1> 
         <p>Ficamos muito feliz com a sua escolha, a partir de agora,
             nos cuidaremos  do resto.<br>
