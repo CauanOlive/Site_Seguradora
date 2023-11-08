@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url("../Projeto_pessoal_LUCAS/imgs/dbv1.jpg");
+    background: url("https://www.tgpoli.com.br/img/noticias/1-blog-1642503205.webp");
     background-size: cover;
 }
 .box{
@@ -26,7 +26,7 @@ body{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #d0db34;
+    border: 2px solid rgb(10 19 193);
     padding: 14px 10px;
     width: 200px;
     outline: none;
@@ -36,7 +36,7 @@ body{
 }
 .box input[type="text"]:focus,.box input[type="password"]:focus{
     width: 280px;
-    border-color: #ee3a22;
+    border-color: #892eff;
 }
 .box input[type="submit"]{
     border: 0;
@@ -44,7 +44,7 @@ body{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #d0db34;
+    border: 2px solid rgb(10 19 193);
     padding: 14px 40px;
     outline: none;
     color: #ffffff;
@@ -53,6 +53,7 @@ body{
    cursor: pointer;
 }
 .box input[type="submit"]:hover{
-    background: #c7c400;
+    background: rgb(10 19 193);
 
 }
+
