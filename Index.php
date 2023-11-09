@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Index_style.css">
     <title>Login</title>
+    <style>
+    p{
+    color: white;
+    }
+</style>
 </head>
 <body>
 
@@ -30,6 +35,7 @@
         <input type="text" id="login" name="usuario" placeholder="Username" required>
         <input type="password" name="senha" placeholder="Password">
         <input href="index.php" type="submit" name="enviar" value="enviar" required>
+        <p>/A senha é projeto!/</p>
     </form>
     
 </body>
