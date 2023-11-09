@@ -27,10 +27,11 @@
             $_SESSION['logado'] = 's';
             $_SESSION['usuario'] = $usuario;
             $_SESSION['erro'] = "";
+
     }
         else{
         $_SESSION['erro'] = "USUARIO OU SENHA INCORRETA!";
-        header("Location:Index.php");
+
     }
     ?>
             <div>
