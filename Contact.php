@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleGroup.css">
+    <link rel="stylesheet" href="Contact.css">
     <title>Página de Contato</title>
 </head>
 <body>
@@ -11,23 +11,56 @@
     <?php
     session_start();
     ?>
-    <header>
-        <h1>Entre em Contato conosco <?php echo $_SESSION["usuario"]?>.</h1>
-    </header>
-    <nav>
-        </nav>
-        <section>
-            <h2>Informações de Contato</h2>
-            <p>Para entrar em contato conosco, utilize os seguintes meios:</p>
-        <ul>
-            <li>Email: <a href="mailto:ProtecSeguro@gmail.com.br">ProtecSeguro@gmail.com.br</a></li>
-            <li>Ou fale com um de nossos atendentes: <br>
-            Telefone: (11) 1234-5678</li>
-        </ul>
-        <ul>
-            <li><a href="pg_principal.php">Página Principal</a></li>
-        </ul>
-    </section>
+    
+    <h1>Preencha este formúlario</h1>
+
+    <div class="form-group">
+
+    <form method="post" action="form_contact.php" id="contato">
+    
+        <label>Nome:</label>
+        <input
+         type="text"
+         name="nome"
+         id="nome"
+         class = "form-control"
+         required
+        /> <br>
+
+        <label>Email:</label>
+        <input
+         type="email"
+         name="email"
+         id="email"
+         class = "form-control"
+         required
+        /> <br>
+
+        <label>Telefone:</label>
+        <input
+         type="tel"
+         name="telefone"
+         id="telefone"
+         class = "form-control"
+         required
+        /> <br>
+        
+        <label for="msg">Mensagem</label><br>
+	    <textarea id="msg" name="msg" rows="4" cols="50" maxlength="350"></textarea>
+        <br>
+
+        <input
+         type="submit" 
+         value="enviar"
+         id="enviar"
+         class="form-control"
+        />
+
+
+    </form>
+
+    </div>
+
     <footer>
         <p>&copy; 2023 ProtecSeguro</p>
     </footer>
