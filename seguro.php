@@ -56,29 +56,51 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Página de conclusão do seguro</title>
-          <style>  
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          background-color: rgb(68 10 193);
-      }
-    .container {
-      background-color:#c8cccd;
-      margin:7px;
-      border:2px solid #5b5c5d;
-      display:block;
-      width:96%;
-      height:40px;
-      padding:8px;
-      box-shadow:3px 3px rgb(0,0,0);
-    }
-      </style>
+        <style>
+
+            @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+            body{
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                background-color: rgb(68 10 193);
+                padding:30px;
+            }
+
+            .control{
+                background-color: #c8cccd;
+                margin: 7px;
+                border: 4px solid #5b5c5d;
+                display: block;
+                box-shadow: 3px 3px rgb(0, 0, 0);
+                padding: 4px;
+                font-size: large;
+            }
+            .result{
+                background-color: #c8cccd;
+                margin: 7px;
+                border: 4px solid #5b5c5d;
+                display: block;
+                box-shadow: 3px 3px rgb(0, 0, 0);
+                padding: 4px;
+                font-size: large;
+            }
+
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+            }
+
+            a{
+                color: white;
+            }
+
+        </style>
     </head>
     <body>
-        <div class="container">
-            
-            <div class="control">
+
+    <div class="control">
         <h1>Obrigado por escolher a nossa seguradora <?php echo $_SESSION["usuario"]?>.</h1> 
         <p>Ficamos muito feliz com a sua escolha, a partir de agora,
             nos cuidaremos  do resto.<br>
@@ -98,13 +120,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <p>R$<?php echo"$seguro"?> por mês.</p>
     </div>
 
-    <div>
-        <a href="pg_principal.php">Página Principal</a>   
-    </div>
 
-    <div id=Final>
+    
+    
+    <footer>
+        <a href="pg_principal.php">Página Principal</a>   
         <p>&copy; 2023 ProtecSeguro</p>
-    </div>
+    </footer>
 
     </body>
 </html>
